@@ -27,7 +27,7 @@ pipeline {
 	   stage('copi the WAR file') {
 		steps {
 		   sh '''
-			cp /var/lib/jenkins/workspace/java-web-cicd-pipeline/target/student-feedback-portal-1.0-SNAPSHORT.war /opt/tomcat/webapps/
+			sudo cp /var/lib/jenkins/workspace/java-web-cicd-pipeline/target/student-feedback-portal-1.0-SNAPSHORT.war /opt/tomcat/webapps/
 			echo 'copied WAR file'
 		      '''
 		      }
