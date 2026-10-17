@@ -24,14 +24,15 @@ pipeline {
 			           fingerprint: true
 		      }
 	}
-	   stage('copy the WAR file') {
-		steps {
-		   sh '''
-		        cp target/student-feedback-portal-1.0-SNAPSHORT.war /opt/tomcat/webapps/
-			echo 'copied WAR file'
-		      '''
-		      }
-	}
+	   stage('Deploy to Tomcat') {
+    steps {
+        sh '''
+            cp target/student-feedback-portal-1.0-SNAPSHOT.war /opt/tomcat/webapps/jenkins-test.war
+            mv /opt/tomcat/webapps/jenkins-test.war /opt/tomcat/webapps/student-feedback-portal-1.0-SNAPSHOT.war
+            echo 'WAR deployed successfully'
+        '''
+    }
+}
      }
 }
 
