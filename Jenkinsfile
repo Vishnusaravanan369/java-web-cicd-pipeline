@@ -27,7 +27,7 @@ pipeline {
 	   stage('copi the WAR file') {
 		steps {
 		   sh '''
-		        cp target/student-feedback-portal-1.0-SNAPSHOT.war /opt/tomcat/webapps/
+		        cp target/student-feedback-portal-1.0-SNAPSHORT.war /opt/tomcat/webapps/
 			echo 'copied WAR file'
 		      '''
 		      }
