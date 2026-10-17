@@ -24,7 +24,7 @@ pipeline {
 			           fingerprint: true
 		      }
 	}
-	   stage('copi the WAR file') {
+	   stage('copy the WAR file') {
 		steps {
 		   sh '''
 		        cp target/student-feedback-portal-1.0-SNAPSHORT.war /opt/tomcat/webapps/
