@@ -27,8 +27,8 @@ pipeline {
 	   stage('Deploy to Tomcat') {
     steps {
         sh '''
-            cp target/student-feedback-portal-1.0-SNAPSHORT.war /opt/tomcat/webapps/jenkins-test.war
-            mv /opt/tomcat/webapps/jenkins-test.war /opt/tomcat/webapps/student-feedback-portal-1.0-SNAPSHORT.war
+	     set -e
+             cp target/student-feedback-portal-1.0-SNAPSHORT.war /opt/tomcat/webapps/
             echo 'WAR deployed successfully'
         '''
     }
