@@ -24,6 +24,14 @@ pipeline {
 			           fingerprint: true
 		      }
 	}
+	   stage('copi the WAR file') {
+		steps {
+		   sh '''
+			cp target/.*WAR /opt/tomcat/webapps/
+			echo 'copied WAR file'
+		      '''
+		      }
+	}
      }
 }
 
