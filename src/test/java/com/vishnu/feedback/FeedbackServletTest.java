@@ -28,7 +28,7 @@ class FeedbackServletTest {
 
         String html = content.toString();
 
-        assertTrue(html.contains("wrong Portal Name"));
+        assertTrue(html.contains("Student Feedback Portal"));
         assertTrue(html.contains("Hi, There this is vishnu saravana"));
     }
 }
