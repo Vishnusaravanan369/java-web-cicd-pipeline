@@ -24,8 +24,8 @@ public class FeedbackServlet extends HttpServlet {
         out.println("<html>");
         out.println("<head><title>Student Feedback Portal</title></head>");
         out.println("<body>");
-        out.println("<h1>Student Feedback Portal</h1>");
-        out.println("<p>Hi, There this is vishnu saravana u might wounder this is the student feedback portal but who the man speaking here</p>");
+        out.println("<h1>Student Feedback Portal - version 2</h1>");
+        out.println("<p>Hi, Website is under maintenance</p>");
         out.println("</body>");
         out.println("</html>");
     }

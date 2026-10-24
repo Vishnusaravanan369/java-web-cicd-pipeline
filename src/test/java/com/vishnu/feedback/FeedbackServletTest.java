@@ -29,6 +29,6 @@ class FeedbackServletTest {
         String html = content.toString();
 
         assertTrue(html.contains("Student Feedback Portal"));
-        assertTrue(html.contains("Hi, There this is vishnu saravana"));
+        assertTrue(html.contains("Hi, Website is under maintenance"));
     }
 }
