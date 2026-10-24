@@ -65,3 +65,4 @@ This project provides practical experience with CI/CD pipeline design, Maven bui
 - Add deployment rollback and improved failure handling.
 - Extend the pipeline to a cloud or Kubernetes environment.
 
+Testing automatic CI/CD triggering
