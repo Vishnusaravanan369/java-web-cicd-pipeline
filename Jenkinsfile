@@ -44,7 +44,7 @@ pipeline {
                          set -e
                          echo "checking application health..."
                          sleep 5
-                         curl -f http://192.168.198.131:8083/invalid-test-path/feedback
+                         curl -f http://192.168.198.131:8083/student-feedback-portal-1.0-SNAPSHORT/feedback
                          echo "Application health check passed!"
                         '''
                       }
