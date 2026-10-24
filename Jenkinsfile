@@ -23,6 +23,11 @@ pipeline {
 		   sh 'mvn test'
 		      }
 	}
+	   stage ('public test report') {
+		steps {
+		   junit 'target/surefire-reports/*.xml'
+		      }
+	}
 	   stage('Archive WAR') {
 		steps {
 		  archiveArtifacts artifacts: 'target/*.war',
