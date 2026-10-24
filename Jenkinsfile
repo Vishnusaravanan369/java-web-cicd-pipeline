@@ -18,11 +18,6 @@ pipeline {
 		   sh 'mvn clean package'
 		      }
 	}
-	   stage('junit test') {
-		steps {
-		   sh 'mvn test'
-		      }
-	}
 	   stage ('public test report') {
 		steps {
 		   junit 'target/surefire-reports/*.xml'
