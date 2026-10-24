@@ -18,6 +18,11 @@ pipeline {
 		   sh 'mvn clean package'
 		      }
 	}
+	   stage('junit test') {
+		steps {
+		   sh 'mvn test'
+		      }
+	}
 	   stage('Archive WAR') {
 		steps {
 		  archiveArtifacts artifacts: 'target/*.war',
@@ -42,7 +47,7 @@ pipeline {
 			 curl -f http://192.168.198.131:8083/student-feedback-portal-1.0-SNAPSHORT/feedback
 			 echo "Application health check passed!"
 			'''
-		    }
+		      }
 	} 
 
 }
